@@ -1,0 +1,23 @@
+{% extends "layer.html" %}
+{% block title %}
+CURRENCY
+{% endblock %}
+{% block body %}
+	<form action="{{ url_for('convert') }}" method="post">
+			<div class="form-group">
+				<h6>
+					<input class="form-control" name="base" placeholder="FIRST CURRENCY">
+		   		</h6>
+			</div>
+			<div class="form-group">
+				<h6>
+					<input class="form-control" name="symbols" placeholder="SECOND CURRENCY">
+	    		</h6>
+			</div>
+			<div class="form-group">
+				<h6>
+					<button class="btn btn-primary"> CONVERT </button>
+		    	</h6>
+			</div>
+	</form>   
+{% endblock %}
